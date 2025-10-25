@@ -1,0 +1,245 @@
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap');
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    section {
+      display: none;
+      text-align: center;
+      width: 100%;
+      max-width: 450px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .cec-logo {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 15px;
+    }
+
+    h1, h2 {
+      color: #00205B;
+    }
+
+    p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #00205B;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-top: 5px;
+    }
+
+    button:hover {
+      background: #2E74B5;
+    }
+
+    .qr-code {
+      margin: 20px auto;
+      display: block;
+      border: 3px solid #00205B;
+      border-radius: 10px;
+      padding: 5px;
+      background: #fff;
+    }
+
+   /* Import League Spartan Font */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap');
+
+/* ==== CHATBOT ==== */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #00205B, #2E74B5);
+  color: #FFD700;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Chat area */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px;
+  background: #f8faff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Message styles */
+.chat-box div {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 20px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.bot-msg {
+  background: #00205B;
+  color: #fff;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 4px 10px rgba(0, 32, 91, 0.2);
+  animation: fadeIn 0.3s ease-in;
+}
+
+.user-msg {
+  background: #FFD700;
+  color: #00205B;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Chat input */
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 0 0 15px 15px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px 18px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1rem;
+}
+
+.chat-input input:focus {
+  border-color: #2E74B5;
+  box-shadow: 0 0 6px rgba(46, 116, 181, 0.3);
+}
+
+.chat-input button {
+  background: #00205B;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.chat-input button:hover {
+  background: #2E74B5;
+}
+
+/* Back button */
+.back-btn {
+  background: #FFD700;
+  color: #00205B;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 18px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #E41E26;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Smooth fade animation for messages */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+    /* ==== ADMIN LOGIN ==== */
+    #admin-login input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    /* ==== ADMIN DASHBOARD ==== */
+    #admin-dashboard .admin-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: #f9fafc;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #00205B;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #444;
+    }
