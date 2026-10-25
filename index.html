@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="The portfolio of Bryant Khlye S. Castro — student developer creating responsive web experiences, game projects, and technology concepts.">
+  <title>Bryant Castro — Developer & Creative Technologist</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="identity" href="#home" aria-label="Bryant Castro, home">
+        <span class="identity-mark" aria-hidden="true">BC<span>.</span></span>
+        <span class="identity-copy"><strong>Bryant Castro</strong><small>Designer-minded developer</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="home" aria-labelledby="heroHeading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> HELLO, I'M BRYANT — BASED IN CEBU CITY</p>
+        <h1 id="heroHeading">Designing ideas.<br><span>Building experiences.</span></h1>
+        <p class="hero-desc">I'm <strong>Bryant Khlye S. Castro</strong>, a student developer exploring the space between clean interfaces, interactive websites, and game development.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="mailto:kobesaya032@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-trail"><span>FRONT-END DEVELOPMENT</span><span class="trail-star">✳</span><span>GAME DESIGN</span><span class="trail-star">✳</span><span>UI / UX</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Portrait of Bryant Castro">
+        <div class="portrait-panel"><img src="assets/images/profile.jpg" alt="Portrait of Bryant Khlye S. Castro" loading="eager"></div>
+        <div class="portrait-index"><span>CREATIVE PORTFOLIO</span><strong>2026 <span aria-hidden="true">↗</span></strong></div>
+        <div class="portrait-side-label" aria-hidden="true">DESIGN / DEVELOPMENT / PLAY</div>
+      </div>
+    </section>
+
+    <div class="shell"><div class="marquee-line" aria-label="Core areas: development, interaction, design, experimentation"><span>DEVELOPMENT</span><b>✳</b><span>INTERACTION</span><b>✳</b><span>DESIGN</span><b>✳</b><span>EXPERIMENTATION</span></div></div>
+
+    <section class="section shell projects-section" id="projects" aria-labelledby="projectsHeading">
+      <div class="section-top">
+        <div><p class="eyebrow kicker">01 / SELECTED WORK</p><h2 id="projectsHeading">Projects that <span>tell a story.</span></h2></div>
+        <p class="section-aside">A mix of playable experiences, practical websites, and thoughtful technology concepts.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All work <span>05</span></button>
+        <button type="button" class="filter" data-filter="games" aria-pressed="false">Games <span>03</span></button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web &amp; AI <span>02</span></button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="work-card feature-work" data-category="games">
+          <div class="feature-content">
+            <div class="card-meta"><span class="tag">FEATURED PROJECT</span><span>01 / GAME DEVELOPMENT</span></div>
+            <div><h3>Word Quest<span class="period">.</span></h3>
+              <p>An adventure-powered word-search game with six themed chapters, 48 levels, collectible rewards, player profiles, boss puzzles, and custom music.</p>
+              <div class="tag-row"><span>JavaScript</span><span>HTML / CSS</span><span>Game Systems</span></div>
+              <div class="card-actions"><a class="text-action" href="pages/word-quest.html">Project details <span aria-hidden="true">↗</span></a><a class="text-action action-light" href="projects/word-quest/index.html">Play game <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </div>
+          <div class="feature-visual" aria-label="Word Quest artwork">
+            <img class="wordquest-logo" src="projects/word-quest/images/logo.png" alt="Word Quest logo" loading="lazy">
+            <span class="visual-caption">FIND. LEARN. QUEST. ACHIEVE.</span>
+          </div>
+        </article>
+
+        <article class="work-card half-work" data-category="web">
+          <div class="work-art health-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="health-phone"><div class="phone-speaker"></div><div class="phone-head"><span>HealthConnect <strong>AI</strong></span><span>✳</span></div><p class="phone-greeting">Good morning,</p><strong class="phone-title">Your wellness,<br>your way.</strong><div class="phone-banner"><span>♡</span><div><b>Wellness check-in</b><small>Stay mindful every day</small></div></div><div class="phone-tiles"><span>◷<small>Track health</small></span><span>✦<small>Wellness tips</small></span></div></div>
+          </div>
+          <div class="work-body"><div class="card-meta"><span>02 / CAPSTONE CONCEPT</span><span class="small-status">PROPOSED</span></div><h3>HealthConnect AI</h3><p>A proposed student wellness mobile application that brings together voluntary health monitoring, preventive reminders, AI-supported general wellness tips, and appropriate clinic follow-up.</p><div class="work-foot"><span>Mobile App Concept · AI</span><a href="pages/healthconnect-ai.html" aria-label="Read HealthConnect AI details">View project <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+
+        <article class="work-card half-work" data-category="web">
+          <div class="work-art chatbot-art" aria-hidden="true"><div class="chat-window"><div class="chat-toolbar"><span><i></i><i></i><i></i></span><b>CEC STUDENT ASSISTANT</b><span>✳</span></div><div class="chat-welcome">How can I help you today?</div><div class="chat-msg chat-in">What are the enrollment requirements?</div><div class="chat-msg chat-out">I can help you find school enrollment information.</div><div class="chat-placeholder">Ask a question... <span>↗</span></div></div></div>
+          <div class="work-body"><div class="card-meta"><span>03 / WEB DEVELOPMENT</span><span class="small-status">ACADEMIC PROJECT</span></div><h3>CEC AI Chatbot</h3><p>A QR-code-accessible student assistant concept for finding school enrollment information, schedules, and events through a simple conversational interface.</p><div class="work-foot"><span>HTML · CSS · JavaScript</span><a href="projects/cec-chatbot/index.html" aria-label="Open CEC AI Chatbot project">View project <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+
+        <article class="work-card half-work" data-category="games">
+          <div class="work-art versus-art" aria-hidden="true"><span class="team team-a">GIRLS</span><strong>VS</strong><span class="team team-b">BOYS</span><span class="versus-sub">THE DIVIDE BETWEEN US</span></div>
+          <div class="work-body"><div class="card-meta"><span>04 / GAME DEVELOPMENT</span><span class="small-status">ROBLOX PROJECT</span></div><h3>The Divide Between Us</h3><p>A military-style Roblox game project featuring a Girls vs Boys faction showdown, customizable loadouts, and competitive gameplay concepts.</p><div class="work-foot"><span>Roblox Studio · Lua</span><span class="muted-action">Project showcase</span></div></div>
+        </article>
+
+        <article class="work-card half-work" data-category="games">
+          <div class="work-art scatter-art" aria-hidden="true"><img src="assets/images/super-skatter-preview.png" alt="" loading="lazy"><span class="scatter-label">INTERACTIVE WEB GAME</span></div>
+          <div class="work-body"><div class="card-meta"><span>05 / GAME DEVELOPMENT</span><span class="small-status">WEB DEMO</span></div><h3>Super Skatter</h3><p>A JavaScript slot-machine interface with animated reels, simulated betting, balance tracking, and interactive game controls.</p><div class="work-foot"><span>HTML · CSS · JavaScript</span><a href="projects/super-skatter/index.html" aria-label="Play Super Skatter web game">Play demo <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell expertise-section" id="expertise" aria-labelledby="expertiseHeading">
+      <div class="section-top"><div><p class="eyebrow kicker">02 / WHAT I DO</p><h2 id="expertiseHeading">Craft and <span>curiosity.</span></h2></div><p class="section-aside">I enjoy shaping digital ideas into experiences that feel intuitive, responsive, and engaging.</p></div>
+      <div class="expertise-grid">
+        <div class="expertise-item"><span class="expertise-number">01</span><div class="expertise-glyph">⌘</div><h3>Web development</h3><p>Structuring accessible, responsive websites and interactive front-end experiences.</p><span class="stack-line">HTML / CSS / JAVASCRIPT</span></div>
+        <div class="expertise-item"><span class="expertise-number">02</span><div class="expertise-glyph">◇</div><h3>Game development</h3><p>Exploring gameplay mechanics, progression systems, puzzle design, and player experiences.</p><span class="stack-line">JAVASCRIPT / ROBLOX STUDIO</span></div>
+        <div class="expertise-item"><span class="expertise-number">03</span><div class="expertise-glyph">✳</div><h3>Interface design</h3><p>Creating thoughtful layouts, prototypes, and visual systems that make digital tools feel clear.</p><span class="stack-line">UI DESIGN / PROTOTYPING</span></div>
+      </div>
+    </section>
+
+    <section class="section shell about-section" id="about" aria-labelledby="aboutHeading">
+      <div><p class="eyebrow kicker">03 / BEHIND THE SCREEN</p><h2 id="aboutHeading">A little about <span>me.</span></h2></div>
+      <div class="about-layout"><div class="about-photo"><img src="assets/images/profile.jpg" alt="Bryant Castro" loading="lazy"><span>CEBU CITY, PHILIPPINES</span></div><div class="about-copy"><p class="about-opening">I'm a student developer who enjoys turning creative ideas into useful digital experiences.</p><p>Currently studying at <strong>Cebu Eastern College</strong>, I focus on building my front-end skills while exploring game development and user interface design. My projects range from playable browser games to student-centered application concepts.</p><p>My background in Technical Drafting (TESDA NC II) and data encoding during my OJT at the Department of Social Welfare and Development has helped me develop patience, attention to detail, and organization — qualities I bring to every new project.</p><div class="about-values"><span>CREATIVITY</span><span>PROBLEM SOLVING</span><span>CONTINUOUS LEARNING</span></div></div></div>
+    </section>
+
+    <section class="section shell contact-section" id="contact" aria-labelledby="contactHeading"><p class="eyebrow kicker">04 / SAY HELLO</p><h2 id="contactHeading">Have an idea?<br><span>Let's talk about it.</span></h2><div class="contact-bottom"><p>Interested in a collaboration or just want to connect? My inbox is open to conversations about code, games, and creative projects.</p><a class="contact-email" href="mailto:kobesaya032@gmail.com">kobesaya032@gmail.com <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> Bryant Khlye S. Castro</span><span>DESIGNED WITH INTENTION · BUILT WITH CODE</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
